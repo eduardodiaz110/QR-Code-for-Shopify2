@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "qr-products"
+client_id = "00fa76e25624d2819484ee08f995f748"
+application_url = "https://sd-institute-samsung-coated.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://sd-institute-samsung-coated.trycloudflare.com/auth/callback",
+  "https://sd-institute-samsung-coated.trycloudflare.com/auth/shopify/callback",
+  "https://sd-institute-samsung-coated.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-b6a433cb.myshopify.com"
